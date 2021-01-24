@@ -4,6 +4,8 @@
   "description": "react redux react-router webpack dev env",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --open --config config/webpack.dev.js",
+    "build": "webpack --progress --config config/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,7 +22,9 @@
     "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
     "webpack": "^5.17.0",
-    "webpack-cli": "^4.4.0"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   },
   "dependencies": {
     "react": "^17.0.1",
