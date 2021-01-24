@@ -1,0 +1,14 @@
+# react-webpack-dev-env
+## dependences
+* webpack
+  * webpack
+  * webpack-cli
+* babel
+  * @babel/core
+  * @babel/preset-env
+  * @babel/preset-react
+  * babel-loader
+  * @babel/plugin-proposal-class-properties
+* react
+  * react
+  * react-dom

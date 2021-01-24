@@ -1,5 +1,5 @@
-var p = document.createElement('p')
-p.innerText = 'test'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import TestComponent from './test.jsx'
 
-var root = document.getElementById('root')
-root.appendChild(p)
+ReactDOM.render(<TestComponent />, document.getElementById('root'))
