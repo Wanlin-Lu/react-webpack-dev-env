@@ -9,6 +9,7 @@ const config = merge(common, {
     contentBase: path.join(__dirname, '../dist'),
     port: 8000,
     compress: true,
+    historyApiFallback: true,
     writeToDisk: false,
   },
 })
