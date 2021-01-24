@@ -3,6 +3,9 @@
 * webpack
   * webpack
   * webpack-cli
+* loader
+* plugin
+  * html-webpack-lugin
 * babel
   * @babel/core
   * @babel/preset-env
