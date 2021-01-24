@@ -23,6 +23,36 @@ module.exports = {
         },
       },
       {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name]-[hash].[ext]',
+            outputPath: 'font',
+          },
+        },
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              // publicPath: './images/',
+              outputPath: 'img',
+            },
+          },
+        ],
+        // use: 'file-loader'
+        // use: ['url-loader?name=fonst/[name].[md5:hash:hex:7].[ext]']
+      },
+      {
+        test: /\.js$/,
+        exclude: /[\\/]node_modules[\\/]/,
+        loader: 'babel-loader',
+      },
+      {
         test: /\.html$/,
         use: [
           {
